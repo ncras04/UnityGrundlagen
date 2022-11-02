@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
     static public GameManager Instance { get; private set; }
 
     [SerializeField] private float m_time;
+
     private int m_score;
 
     private void Awake()
@@ -25,5 +26,7 @@ public class GameManager : MonoBehaviour
 
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+
+
     }
 }
